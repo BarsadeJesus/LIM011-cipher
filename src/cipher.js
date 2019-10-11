@@ -5,7 +5,7 @@ window.cipher = {
         //Obtengo el codigo ascii de la letra
         let codeAsci = string.charCodeAt(i);
         if(codeAsci !== 32) {
-        //Obtengo la posicion de la nueva posicion(posicion desplazada)
+          //Obtengo la posicion de la nueva posicion(posicion desplazada)
           let posDesp = ((codeAsci-65 + offset)%26)+65;
           //Obtengo la letra de la nueva posicion
           let letDesp = String.fromCharCode(posDesp);
@@ -27,9 +27,7 @@ encodeDni: (stringDni, offset) => {
     let posDespDni=codeAsciDni+100+ offset;
     //Obtengo la letra de la nueva posicion
     let nDespDni=String.fromCharCode(posDespDni);
-    console.log(nDespDni)
-      cadenaDni=cadenaDni+nDespDni;
-      console.log("cadenaDni")
+    cadenaDni=cadenaDni+nDespDni;
     };
     return cadenaDni;
 },
@@ -46,7 +44,7 @@ decode: (string,offset) => {
         let posDespD=((codeAsciD+65 - offset)%26)+65;
         //Obtengo la letra de la nueva posicion
         let letDespD=String.fromCharCode(posDespD);
-         cadenaD=cadenaD+letDespD;
+        cadenaD=cadenaD+letDespD;
        }
        else{
          cadenaD= cadenaD + " ";

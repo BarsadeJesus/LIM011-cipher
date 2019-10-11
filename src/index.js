@@ -39,11 +39,10 @@ butn.addEventListener('click', () => {
   let nColaborator=document.getElementById('nomColaborator').value;
   let nameColaborator=nColaborator.toUpperCase();
   let dniColaborator=document.getElementById('dni').value;
-  //document.getElementById('dniCif').value=cadenaDni;
+  
   document.getElementById('nomColaboradorC').value = window.cipher.encode(nameColaborator, offset);
   document.getElementById('dniCif').value=window.cipher.encodeDni(dniColaborator, offset);
-  //document.getElementById('nomColaboradorD').value=cadenaD;
-    //Cifrado del dni
+  
 
 })
 
@@ -54,12 +53,11 @@ butnD.addEventListener('click', () => {
   //Cifrado del Nombre
   let nameColaboratorD=document.getElementById('nomColaboradorC').value;
   let dniColaboratorD=document.getElementById('dniCif').value;
-  //Obtengo la longitud del nombre
-  //let lengthNameColaboratorD=nameColaboratorD.length;
+  
   document.getElementById('nomColaboradorD').value=window.cipher.decode(nameColaboratorD, offset);
   document.getElementById('dniDes').value=window.cipher.decodeDni(dniColaboratorD, offset);
 
 
-      // document.getElementById('dniDes').value=cadenaDniD;
+     
 
 })
