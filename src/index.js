@@ -2,14 +2,14 @@ const cero=document.getElementById("cero");
 const first=document.getElementById("first");
 const second=document.getElementById("second");
 
+// boton siguiente
 const siguiente=document.getElementById("next");
 siguiente.addEventListener('click',() => {
-
-
+  cero.classList.add("hide");
   first.classList.remove("hide");
   second.classList.add("hide");
 })
-
+//boton volver
 const volver=document.getElementById("volver");
 volver.addEventListener('click', () => {
 
@@ -18,7 +18,7 @@ volver.addEventListener('click', () => {
   second.classList.add("hide");
   document.getElementById("nomColaborator").value='';
   document.getElementById("dni").value='';
-  document.getElementById("lista").value='';
+  document.getElementById("lista").value=1;
 
   document.getElementById("numCipher").value='';
   document.getElementById("nomColaboradorC").value='';
@@ -38,23 +38,13 @@ butn.addEventListener('click', () => {
   //Cifrado del Nombre
   let nColaborator=document.getElementById('nomColaborator').value;
   let nameColaborator=nColaborator.toUpperCase();
-  //document.get.ElementById('Prueba').value=lengthNameColaborator;
+  let dniColaborator=document.getElementById('dni').value;
+  //document.getElementById('dniCif').value=cadenaDni;
   document.getElementById('nomColaboradorC').value = window.cipher.encode(nameColaborator, offset);
+  document.getElementById('dniCif').value=window.cipher.encodeDni(dniColaborator, offset);
   //document.getElementById('nomColaboradorD').value=cadenaD;
     //Cifrado del dni
-    let cadenaDni='';
-    let dniColaborator=document.getElementById('dni').value;
 
-    for(i=0; i<8 ; i++){
-      //Obtengo el codigo ascii del numero
-      let codeAsciDni=dniColaborator.charCodeAt(i);
-      //Obtengo la posicion de la nueva posicion(posicion desplazada)
-      let posDespDni=codeAsciDni+100+ offset;
-      //Obtengo la letra de la nueva posicion
-      let nDespDni=String.fromCharCode(posDespDni);
-        cadenaDni=cadenaDni+nDespDni;
-        document.getElementById('dniCif').value=cadenaDni;
-  };
 })
 
 const butnD=document.getElementById("btnD");
@@ -63,19 +53,13 @@ butnD.addEventListener('click', () => {
   const offset=parseInt(document.getElementById('numCipher').value);
   //Cifrado del Nombre
   let nameColaboratorD=document.getElementById('nomColaboradorC').value;
+  let dniColaboratorD=document.getElementById('dniCif').value;
   //Obtengo la longitud del nombre
   //let lengthNameColaboratorD=nameColaboratorD.length;
   document.getElementById('nomColaboradorD').value=window.cipher.decode(nameColaboratorD, offset);
-  let cadenaDniD='';
-   let dniColaboratorD=document.getElementById('dniCif').value;
-   for(i=0; i<8 ; i++){
-     //Obtengo el codigo ascii del numero
-     let codeAsciDniD=dniColaboratorD.charCodeAt(i);
-     //Obtengo la posicion de la nueva posicion(posicion desplazada)
-     let posDespDniD=codeAsciDniD-100 - offset;
-     //Obtengo la letra de la nueva posicion
-     let nDespDniD=String.fromCharCode(posDespDniD);
-       cadenaDniD=cadenaDniD+nDespDniD;
-       document.getElementById('dniDes').value=cadenaDniD;
-    }
+  document.getElementById('dniDes').value=window.cipher.decodeDni(dniColaboratorD, offset);
+
+
+      // document.getElementById('dniDes').value=cadenaDniD;
+
 })

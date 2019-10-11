@@ -15,8 +15,26 @@ window.cipher = {
          }
        }
        return cadena;
+
+
 },
-   decode: (string,offset) => {
+encodeDni: (stringDni, offset) => {
+  let cadenaDni='';
+  for(i=0; i<8 ; i++){
+    //Obtengo el codigo ascii del numero
+    let codeAsciDni=stringDni.charCodeAt(i);
+    //Obtengo la posicion de la nueva posicion(posicion desplazada)
+    let posDespDni=codeAsciDni+100+ offset;
+    //Obtengo la letra de la nueva posicion
+    let nDespDni=String.fromCharCode(posDespDni);
+    console.log(nDespDni)
+      cadenaDni=cadenaDni+nDespDni;
+      console.log("cadenaDni")
+    };
+    return cadenaDni;
+},
+
+decode: (string,offset) => {
 
      let cadenaD='';
      for(i=0; i<string.length ; i++){
@@ -35,5 +53,21 @@ window.cipher = {
        }
    }
    return cadenaD;
+ },
+
+ decodeDni:(stringDni,offset) => {
+   let cadenaDniD='';
+
+   for(i=0; i<8 ; i++){
+     //Obtengo el codigo ascii del numero
+     let codeAsciDniD=stringDni.charCodeAt(i);
+     //Obtengo la posicion de la nueva posicion(posicion desplazada)
+     let posDespDniD=codeAsciDniD-100 - offset;
+     //Obtengo la letra de la nueva posicion
+     let nDespDniD=String.fromCharCode(posDespDniD);
+       cadenaDniD=cadenaDniD+nDespDniD;
  }
+ return cadenaDniD;
+
+}
 }
