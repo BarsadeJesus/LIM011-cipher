@@ -284,3 +284,47 @@ Organización del Trabajo:
 * [Scrum en Detalle](https://www.youtube.com/watch?v=nOlwF3HRrAY&t=297s). No
   esperamos que hagas todo eso desde este proyecto. Iremos profundizando poco a
   poco a lo largo del -_bootcamp_.
+
+  ## Objetivos de aprendizaje Cipher
+​
+A continuación te presentamos los objetivos de aprendizaje de este proyecto. Reflexiona y luego marca los objetivos que has llegado a **entender** y **aplicar** en tu proyecto.
+​
+### UX
+​
+- [SI] Diseñar la aplicación pensando y entendiendo al usuario.
+- [SI] Crear prototipos para obtener feedback e iterar.
+- [NO] Aplicar los principios de diseño visual (contraste, alineación, jerarquía).
+​
+### HTML y CSS
+​
+- [SI] Uso correcto de HTML semántico.
+- [NO] Uso de selectores de CSS.
+- [SI] Construir tu aplicación respetando el diseño realizado (maquetación).
+​
+### DOM
+​
+- [X] Uso de selectores del DOM.
+- [X] Manejo de eventos del DOM.
+- [] Manipulación dinámica del DOM.
+​
+### Javascript
+​
+- [SI] Manipulación de strings.
+- [SI] Uso de condicionales (if-else | switch).
+- [NO] Uso de bucles (for | do-while).	
+- [SI] Uso de funciones (parámetros | argumentos | valor de retorno).
+- [NO] Declaración correcta de variables (const & let).
+​
+### Testing
+- [NO] Testeo de tus funciones.
+​
+### Git y GitHub
+- [NO] Comandos de git (add | commit | pull | status | push).
+- [NO] Manejo de repositorios de GitHub (clone | fork | gh-pages).
+​
+### Buenas prácticas de desarrollo
+- [SI] Uso de identificadores descriptivos (Nomenclatura | Semántica).
+- [NO] Uso de linter para seguir buenas prácticas (ESLINT).
+Collapse
+
+
