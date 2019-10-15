@@ -42,11 +42,14 @@ butn.addEventListener('click', () => {
   document.getElementById('dniCif').value = window.cipher.encodeDni(dniColaborator, offset);
 });
 
+// Descifrado
 const butnD = document.getElementById('btnD');
 butnD.addEventListener('click', () => {
   const offset = parseInt(document.getElementById('numCipher').value, 10);
   //  Cifrado del Nombre
   const nameColaboratorD = document.getElementById('nomColaboradorC').value;
+  // const string = document.getElementById('nomColaboradorC').value;
+  // const stringDni = document.getElementById('dniCif').value;
   const dniColaboratorD = document.getElementById('dniCif').value;
   document.getElementById('nomColaboradorD').value = window.cipher.decode(nameColaboratorD, offset);
   document.getElementById('dniDes').value = window.cipher.decodeDni(dniColaboratorD, offset);

@@ -11,17 +11,16 @@ describe('cipher', () => {
       expect(typeof cipher.encode).toBe('function');
     });
     it('debería retornar "HIJKLMNOPQRSTUVWXYZABCDEFG" para "ABCDEFGHIJKLMNOPQRSTUVWXYZ" con offset 33', () => {
-      expect(cipher.encode(33, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ')).toBe('HIJKLMNOPQRSTUVWXYZABCDEFG');
-      it('debería retornar "HIJ KLMNOPQRSTUVWXYZABCDEFG" para "ABC DEFGHIJKLMNOPQRSTUVWXYZ" con offset 33', () => {
-        // escribe aquí tus test
-        expect(cipher.encode(33, 'HIJ KLMNOPQRSTUVWXYZABCDEFG')).toBe('ABC DEFGHIJKLMNOPQRSTUVWXYZ');
-      });
+      expect(cipher.encode('ABCDEFGHIJKLMNOPQRSTUVWXYZ', 33)).toBe('HIJKLMNOPQRSTUVWXYZABCDEFG');
+    });
+    it('debería retornar "HIJ KLMNOPQRSTUVWXYZABCDEFG" para "ABC DEFGHIJKLMNOPQRSTUVWXYZ" con offset 33', () => {
+      expect(cipher.encode('ABC DEFGHIJKLMNOPQRSTUVWXYZ', 33)).toBe('HIJ KLMNOPQRSTUVWXYZABCDEFG');
     });
     it('debería ser una función', () => {
       expect(typeof cipher.encodeDni).toBe('function');
     });
     it('debería retornar "34567890" para "01234567"', () => {
-      expect(cipher.encodeDni(33, '01234567')).toBe('34567890');
+      expect(cipher.encodeDni('01234567', 33)).toBe('34567890');
     });
     // Hacker edition
     //
@@ -51,18 +50,18 @@ describe('cipher', () => {
     });
     it('debería retornar "ABCDEFGHIJKLMNOPQRSTUVWXYZ" para "HIJKLMNOPQRSTUVWXYZABCDEFG" con offset 33', () => {
       // escribe aquí tus test
-      expect(cipher.decode(33, 'HIJKLMNOPQRSTUVWXYZABCDEFG')).toBe('ABCDEFGHIJKLMNOPQRSTUVWXYZ');
+      expect(cipher.decode('HIJKLMNOPQRSTUVWXYZABCDEFG', 33)).toBe('ABCDEFGHIJKLMNOPQRSTUVWXYZ');
     });
     it('debería retornar "ABC DEFGHIJKLMNOPQRSTUVWXYZ" para "HIJ KLMNOPQRSTUVWXYZABCDEFG" con offset 33', () => {
       // escribe aquí tus test
-      expect(cipher.decode(33, 'HIJ KLMNOPQRSTUVWXYZABCDEFG')).toBe('ABC DEFGHIJKLMNOPQRSTUVWXYZ');
+      expect(cipher.decode('HIJ KLMNOPQRSTUVWXYZABCDEFG', 33)).toBe('ABC DEFGHIJKLMNOPQRSTUVWXYZ');
     });
     it('debería ser una función', () => {
       expect(typeof cipher.encodeDni).toBe('function');
     });
     it('debería retornar "01234567" para "34567890" con offset 33', () => {
       // escribe aquí tus test
-      expect(cipher.decodeDni(33, '34567890')).toBe('01234567');
+      expect(cipher.decodeDni('34567890', 33)).toBe('01234567');
     });
     //
     // Hacker edition
