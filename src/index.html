@@ -4,16 +4,19 @@
     <meta charset="utf-8">
     <title>Caesar Cipher</title>
     <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato|Source+Sans+Pro&display=swap" rel="stylesheet">
+
   </head>
   <body>
       <header >  </header>
-
+      <div id="container">
       <div id="cero">
-        <h1>Estimado ciudadano</h1>
+        <h1>Estimad@ ciudadan@</h1>
         <p>Queremos indicarle que los datos personales que acontinuación usted
         ingresará entrarán en un proceso de encriptación lo cual permitirá que
-        sean lo más privado posible. La Policía Nacional del Perú le da las gracias por su
-        colaboración con el combate y erradicación de la delincuencia. </p>
+        sean lo más privado posible. El Ministerio el Interior del Perú encargada 
+        del orden interno y público a través de La Policía Nacional del Perú le 
+        da las gracias por su colaboración con el combate y erradicación de la delincuencia. </p>
 
       <button type="button" id="next" name="button">SIGUIENTE</button>
 
@@ -22,64 +25,45 @@
     <div id="first" class="hide">
       <h1>REPORTE SEGURO DE REQUISITORIADOS</h1>
 
-    <label for="colaborador">Ingrese su nombre:</label>
-    <input type="text" name="colaborador" id="nomColaborator" value=""> <br><br>
-
-    <label for="numDni">Ingrese su número de DNI:</label>
-
-   <input type="text" maxlength="8" name="numDni" id="dni" value="">
-   <br>
-<br>
-
-      <label for="numero">Ingrese un nivel de seguridad:</label>
-
-      <input type="text" name="numero" id="numCipher" value="">
-
-    <br>
-    <br>
-
+      <div id="data">
+      <label for="colaborador">Ingrese su nombre:</label><input type="text" name="colaborador" id="nomColaborator" value=""> <br><br>
+      <label for="numDni">Ingrese su número de DNI:</label><input type="text" maxlength="8" name="numDni" id="dni" value="">
+      <br><br>
+      <label for="numero">Ingrese un nivel de seguridad:</label><input type="text" name="numero" id="numCipher" value="">
+      <br><br>
       <label for="listado">Elija el nombre de la persona buscada:</label>
-         <select name="listado" id="lista" >
+         <select name="listado" id="lista">
 
                 <option value="1">Seleccione un nombre</option>
                 <option value="2">Miguel Frias</option>
                 <option value="3">Jorge Arias</option>
                 <option value="4">Tomas Lu</option>
                 <option value="5">Juan Perez</option>
-          </select>
-
-<br><br><br>
+          </select><br><br><br>
+      
       <button type="button" id="btn" name="button">CIFRAR</button>
-
-<br>
-
+    </div><br>
  </div>
 
 <div id="second" class="hide">
 
   <h1>REPORTE CIFRADO DE REQUISITORIADOS</h1>
-
-  <label for="colaboradorCifrado">Nombre cifrado:</label>
-   <input type="text" id="nomColaboradorC" name="colaboradorCifrado" value="" disabled>
-   <br> <br>
-   <label for="dniCifrado">DNI Cifrado:</label>
-   <input type="text" id="dniCif" name="dniCifrado" value="" disabled>
-    <br><br>
-   <button type="button" id="btnD" name="button">DESCIFRAR</button>
-<br>
-   <br>
-   <label for="nomColaboradorD">Nombre Descifrado:</label>
-    <input type="text" id="nomColaboradorD" value="" disabled>
-    <br>
-    <br>
-    <label for="dniDes">DNI Decifrado:</label>
-   <input type="text" id="dniDes" value="" disabled>
-   <br>
-   <br>
-
-<button type="button" id="volver" name="button">VOLVER</button>
+      <div id="data1">
+  
+      <label for="colaboradorCifrado">Nombre cifrado:</label><input type="text" id="nomColaboradorC" name="colaboradorCifrado" value="" disabled>
+      <br><br>
+      <label for="dniCifrado">DNI Cifrado:</label><input type="text" id="dniCif" name="dniCifrado" value="" disabled>
+      <br><br>
+      <button type="button" id="btnD" name="button">DESCIFRAR</button>
+      <br><br>
+      <label for="nomColaboradorD">Nombre:</label><input type="text" id="nomColaboradorD" value="" disabled>
+      <br><br>
+      <label for="dniDes">DNI:</label><input type="text" id="dniDes" value="" disabled>
+      <br><br>
+      <button type="button" id="volver" name="button">VOLVER</button>
+      </div>
 </div>
-
+</div>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
 

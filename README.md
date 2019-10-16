@@ -130,7 +130,26 @@ cómo tu aplicación lo soluciona.
   [Google Slides](https://www.google.com/intl/es/slides/about/), etc.)
 Estos puntos los presentarás en el `README.md`.
 
-**`README.md`**:
+**`README.md`**: 
+
+* TITULO DEL PROYECTO: REPORTE SEGURO DE REQUISITORIADOS.
+* El presente proyecto trata de que un ciudadano pueda encriptar su nombre y su dni, para brindar informacion     de algún requisitoriado buscado por la Policía Nacional del Perú.  
+
+* Investigación UX: 
+  1. Explicar quiénes son los usuarios y los objetivos en relación con el
+    producto: Los usuarios serán un ciudadano y la PNP: El producto permitirá que la ciudadanía tenga la confianza de brindar sus datos personales a la PNP, sin el temor a que se tomen represalias sobre sus vidas.
+  2. Explicar cómo el producto soluciona los problemas/necesidades de dichos
+    usuarios: Para la PNP, será de muchas ayuda en su lucha para la disminución de la delincuencia en el país.
+  3. Luego colocarás la foto de tu primer prototipo en papel.
+  ![Primera pantalla](/imagenes/imagen1.jpg) 
+  ![Segunda pantalla](/imagenes/imagen2.jpg)
+  4. Agregar un resumen del feedback recibido indicando las mejoras a realizar: Fueron aproximadamente 3 feedbacks los que me han hecho, donde me sugirieron que el cifrado del dni, cifre en torno a numeros ya que en principio lo habia considerado que cifre con caracteres diferentes a numeros y letras como por ejemplo: (),/{}[], entre otros. Otro fue en el aspecto del diseño tales como color de fondo, logotipo, tos de letra, etc.
+  5. Imagen del prototipo final.
+   ![Prototipo final1](/imagenes/prototipoFinal1.png) 
+   ![Prototipo final2](/imagenes/prototipoFinal2.png) 
+
+
+<!-- **`README.md`**: 
 
 Debe contener lo siguiente:
 
@@ -325,6 +344,6 @@ A continuación te presentamos los objetivos de aprendizaje de este proyecto. Re
 ### Buenas prácticas de desarrollo
 - [SI] Uso de identificadores descriptivos (Nomenclatura | Semántica).
 - [NO] Uso de linter para seguir buenas prácticas (ESLINT).
-Collapse
+Collapse --!>
 
 
