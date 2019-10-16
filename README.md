@@ -1,136 +1,82 @@
 # Cifrado César
 
-## Índice
 
-* [1. Preámbulo](#1-preámbulo)
-* [2. Resumen del proyecto](#2-resumen-del-proyecto)
-* [3. Objetivos de aprendizaje](#3-objetivos-de-aprendizaje)
-* [4. Consideraciones generales](#4-consideraciones-generales)
-* [5. Criterios de aceptación mínimos del proyecto](#5-criterios-de-aceptación-mínimos-del-proyecto)
-* [6. Hacker Edition](#6-hacker-edition)
-* [7. Pistas, tips y lecturas complementarias](#6-pistas-tips-y-lecturas-complementarias)
+## 1. TITULO DEL PROYECTO: REPORTE SEGURO DE REQUISITORIADOS.
 
-***
-
-## 1. Preámbulo
-
-Cifrar significa codificar. El [cifrado César](https://en.wikipedia.org/wiki/Caesar_cipher)
-es uno de los primeros métodos de cifrado conocidos. El emperador romano Julio
-César lo usaba para enviar órdenes secretas a sus generales en los campos de
-batalla.
-
-![caeser-cipher](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Caesar3.svg/2000px-Caesar3.svg.png)
-
-El cifrado césar es una de las técnicas más simples para cifrar un mensaje. Es
-un tipo de cifrado por sustitución, es decir que cada letra del texto original
-es reemplazada por otra que se encuentra un número fijo de posiciones
-(desplazamiento) más adelante en el mismo alfabeto.
-
-Por ejemplo, si usamos un desplazamiento (_offset_) de 3 posiciones:
-
-* La letra A se cifra como D.
-* La palabra CASA se cifra como FDVD.
-* Alfabeto sin cifrar: A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
-* Alfabeto cifrado: D E F G H I J K L M N O P Q R S T U V W X Y Z A B C
-
-En la actualidad, todos los cifrados de sustitución simple se descifran con
-mucha facilidad y, aunque en la práctica no ofrecen mucha seguridad en la
-comunicación por sí mismos; el cifrado César sí puede formar parte de sistemas
-más complejos de codificación, como el cifrado Vigenère, e incluso tiene
-aplicación en el sistema ROT13.
+Dada la problemática de la inseguridad y la falta de confidencialidad que sienten los ciudadanos en reportar el paradero de un delincuente, por el miedo a que luego ellos tomen represalias poniendo en riesgo su seguridad e integridad y la de su familia. Muchos de ellos se quedan callados siendo este de gran ayuda para facilitar a la Policía Nacional en disminuir la delincuencia en nuestro país. Es por eso que se está viendo la necesidad de desarrollar un sistema en donde le va a permitir al ciudadano, colaborar con toda confianza ya que sus datos personales ( nombres y dni ) cuando ellos ingresen serán cifrados y solo la Policía será la única que pueda descifrar esta información .
 
 ## 2. Resumen del proyecto
 
-¿Qué tengo que hacer exactamente? En este proyecto crearás la primera aplicación
-web del _bootcamp_. Servirá para que el usuario pueda cifrar y descifrar un
-texto indicando un desplazamiento específico de caracteres (_offset_).
+El presente proyecto trata de que un ciudadano pueda encriptar su nombre y su dni, para brindar informacion de algún requisitoriado buscado por la Policía Nacional del Perú. 
 
-La temática es libre. Tú debes pensar en qué situaciones de la vida real se
-necesitaría cifrar un mensaje y pensar en cómo debe ser esa experiencia de uso
-(qué pantallas, explicaciones, mensajes, colores, ¿marca?) etc. Algunas ideas de
-ejemplo:
+![Primera pantalla](/imagenes/cifrado1.jpg) 
+![Segunda pantalla](/imagenes/cifrado2.jpg) 
+![Tercera pantalla](/imagenes/cifrado3.jpg) 
 
-* Crear claves seguras para el email.
-* Encriptar/cifrar una tarjeta de crédito.
-* Herramienta de mensajería interna de una organización de derechos humanos en
-  una zona de conflicto.
-* Mensajería secreta para parejas.
 
-## 3. Objetivos de aprendizaje
 
-El objetivo principal de aprendizaje es adquirir experiencia desarrollando
-aplicaciones web (WebApp) que interactúen con el usuario a través del navegador
-y la lógica, utilizando HTML5, CCS3 y JavaScript como herramientas.
+## 3. Quienes son los usuarios y los objetivos 
 
-Dicho en palabras sencillas, aprenderás a:
+Los usuarios serán cualquier ciudadano y la PNP. El objetivo principal es brindarle a la ciudadanía la confianza de brindar sus datos personales a la PNP, a fin de erradicar la delincuencia.
 
-* Organizar tu tiempo y priorizar tareas en un entorno de **alta incertidumbre**.
-* Entender las **necesidades del usuario** y cómo proponer una solución para él.
-* Entender la importancia del proceso de prototipado durante la creación de un
-  proyecto digital.
-* Conocer los principios básicos del diseño visual.
-* Utilizar etiquetas semánticas  de HTML5 y elementos de formulario.
-* Utilizar diversos tipos de selectores en CSS: de elemento, de clase, de id,
-  etc.
-* Utilizar el modelo de cajas (border, margin, padding)
-* Definir reglas de estilos en CSS.
-* Utilizar eventos del DOM que le permitan al usuario interactuar con la
-  aplicación.
-* Utilizar los métodos de selección del DOM.
-* Actualizar de manera dinámica el contenido de la aplicación a través de
-  innerHTML o textContent.
-* Manipular _**strings**_ (cadenas de texto).
-* Usar **control de flujo if-else, do-while** (bucles y condicionales).
-* _Implementar funciones_ dada una descripción de su comportamiento.
-* Verificar que tus funciones hagan las cosas para las que fueron creadas
-(**pruebas unitarias (_test_) con Jest**).
-* Configurar tu cuenta de _git_.
-* _Forkear_ y _clonar_ el repositorio del proyecto.
-* Mantener actualizado los cambios en tu repositorio remoto (_ commit_, _pull_,
-  _push_).
-* Desplegar tu proyecto en _gh-pages_.
+## 4. De que manera el producto soluciona los problemas/necesidades de los usuarios
 
-## 4. Consideraciones generales
+Para la PNP, será de muchas ayuda ya que el ciudadano tendrá más confianza en brindar sus datos personales, sumándose cada vez mas en su lucha para la disminución de la delincuencia en el país.
 
-* Este proyecto se debe resolver de manera individual.
-* El proyecto será entregado subiendo tu código a GitHub (commit/push) y la
-  interfaz será desplegada usando GitHub pages. Si no sabes lo que es GitHub, no
-  te preocupes, lo aprenderás durante este proyecto.
-* Tiempo para completarlo: Toma como referencia 2 semanas. Trabaja durante el
-  primer Sprint (una semana) y al final, trata de fijar un estimado de cuándo lo
-  terminarás.
+## 5. Foto del primer prototipo en papel.
+  ![Primera pantalla](/imagenes/imagen1.jpg) 
+  ![Segunda pantalla](/imagenes/imagen2.jpg)
 
-## 5. Criterios de aceptación mínimos del proyecto
+## 6. Resumen de feedback.
+Corregir la parte del cifrado del dni, en principio lo hacía en torno a caracteres que eran diferentes a numeros y letras como por ejemplo: (),/{}[], entre otros. Otro fue en el aspecto del diseño tales como color de fondo, logotipo, tipos de letra, etc.
 
-Usa este alfabeto simple (solamente mayúsculas y sin ñ).
+## 7. Imagen del prototipo final.
+   ![Prototipo final1](/imagenes/prototipoFinal1.png) 
+   ![Prototipo final2](/imagenes/prototipoFinal2.png) 
 
-* A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+## Objetivos de aprendizaje Cipher
+​
+A continuación te presentamos los objetivos de aprendizaje de este proyecto. Reflexiona y luego marca los objetivos que has llegado a **entender** y **aplicar** en tu proyecto.
+​
+### UX
+​
+- [SI] Diseñar la aplicación pensando y entendiendo al usuario.
+- [SI] Crear prototipos para obtener feedback e iterar.
+- [NO] Aplicar los principios de diseño visual (contraste, alineación, jerarquía).
+​
+### HTML y CSS
+​
+- [SI] Uso correcto de HTML semántico.
+- [NO] Uso de selectores de CSS.
+- [SI] Construir tu aplicación respetando el diseño realizado (maquetación).
+​
+### DOM
+​
+- [X] Uso de selectores del DOM.
+- [X] Manejo de eventos del DOM.
+- [] Manipulación dinámica del DOM.
+​
+### Javascript
+​
+- [SI] Manipulación de strings.
+- [SI] Uso de condicionales (if-else | switch).
+- [NO] Uso de bucles (for | do-while).	
+- [SI] Uso de funciones (parámetros | argumentos | valor de retorno).
+- [NO] Declaración correcta de variables (const & let).
+​
+### Testing
+- [NO] Testeo de tus funciones.
+​
+### Git y GitHub
+- [NO] Comandos de git (add | commit | pull | status | push).
+- [NO] Manejo de repositorios de GitHub (clone | fork | gh-pages).
+​
+### Buenas prácticas de desarrollo
+- [SI] Uso de identificadores descriptivos (Nomenclatura | Semántica).
+- [NO] Uso de linter para seguir buenas prácticas (ESLINT).
+Collapse --!>
 
-La interfaz debe permitir al usuario:
-
-* Elegir un desplazamiento (_offset_) indicando cuántas posiciones queremos que
-  el cifrado desplace cada caracter.
-* Insertar un mensaje (texto) que queremos cifrar.
-* Ver el resultado del mensaje cifrado.
-* Insertar un mensaje (texto) a descifrar.
-* Ver el resultado del mensaje descifrado.
-
-### Scripts / Archivos
-
-#### UX (Diseño de experiencia de usuario)
-
-Antes de iniciar a codear, debes entender el problema que quieres solucionar y
-cómo tu aplicación lo soluciona.
-
-* Trabaja tu primer prototipo con papel y lápiz (blanco y negro).
-* Luego valida esta solución con una compañera (pedir feedback).
-* Toma lo aprendido al momento de validar tu primer prototipo y desarrolla un
-  nuevo prototipo usando alguna herramienta para diseño de prototipos
-  ([Balsamiq](https://balsamiq.com/), [Figma](https://www.figma.com/),
-  [Google Slides](https://www.google.com/intl/es/slides/about/), etc.)
-Estos puntos los presentarás en el `README.md`.
-
-**`README.md`**:
+<!-- **`README.md`**: 
 
 Debe contener lo siguiente:
 
@@ -284,3 +230,47 @@ Organización del Trabajo:
 * [Scrum en Detalle](https://www.youtube.com/watch?v=nOlwF3HRrAY&t=297s). No
   esperamos que hagas todo eso desde este proyecto. Iremos profundizando poco a
   poco a lo largo del -_bootcamp_.
+
+  ## Objetivos de aprendizaje Cipher
+​
+A continuación te presentamos los objetivos de aprendizaje de este proyecto. Reflexiona y luego marca los objetivos que has llegado a **entender** y **aplicar** en tu proyecto.
+​
+### UX
+​
+- [SI] Diseñar la aplicación pensando y entendiendo al usuario.
+- [SI] Crear prototipos para obtener feedback e iterar.
+- [NO] Aplicar los principios de diseño visual (contraste, alineación, jerarquía).
+​
+### HTML y CSS
+​
+- [SI] Uso correcto de HTML semántico.
+- [NO] Uso de selectores de CSS.
+- [SI] Construir tu aplicación respetando el diseño realizado (maquetación).
+​
+### DOM
+​
+- [X] Uso de selectores del DOM.
+- [X] Manejo de eventos del DOM.
+- [] Manipulación dinámica del DOM.
+​
+### Javascript
+​
+- [SI] Manipulación de strings.
+- [SI] Uso de condicionales (if-else | switch).
+- [NO] Uso de bucles (for | do-while).	
+- [SI] Uso de funciones (parámetros | argumentos | valor de retorno).
+- [NO] Declaración correcta de variables (const & let).
+​
+### Testing
+- [NO] Testeo de tus funciones.
+​
+### Git y GitHub
+- [NO] Comandos de git (add | commit | pull | status | push).
+- [NO] Manejo de repositorios de GitHub (clone | fork | gh-pages).
+​
+### Buenas prácticas de desarrollo
+- [SI] Uso de identificadores descriptivos (Nomenclatura | Semántica).
+- [NO] Uso de linter para seguir buenas prácticas (ESLINT).
+Collapse --!>
+
+
