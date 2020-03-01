@@ -24,8 +24,8 @@ Los usuarios serán cualquier ciudadano y la PNP. El objetivo principal es brind
 Para la PNP, será de muchas ayuda ya que el ciudadano tendrá más confianza en brindar sus datos personales, sumándose cada vez mas en su lucha para la disminución de la delincuencia en el país.
 
 ## 5. Foto del primer prototipo en papel.
-  ![Primera pantalla](/imagenes/imagen1.jpg) 
-  ![Segunda pantalla](/imagenes/imagen2.jpg)
+  
+ 
 
 ## 6. Resumen de feedback.
 Corregir la parte del cifrado del dni, en principio lo hacía en torno a caracteres que eran diferentes a numeros y letras como por ejemplo: (),/{}[], entre otros. Otro fue en el aspecto del diseño tales como color de fondo, logotipo, tipos de letra, etc.
